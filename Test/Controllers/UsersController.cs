@@ -41,6 +41,69 @@ namespace Test.Controllers
                 ctx.SaveChanges();
                 return RedirectToAction("Index");
             }
+
         }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            using (Models.MyContext ctx = new Models.MyContext())
+            {
+                var currentUser = ctx.Users.Where(u => u.ID.Equals(id)).FirstOrDefault();
+                if (currentUser != null)
+                    return View();
+            }
+            return View();
+
+        }
+
+        [HttpPost]
+        public ActionResult Edit(int id, FormCollection form)
+        {
+            using (Models.MyContext ctx = new Models.MyContext())
+            {
+                var currentUser = ctx.Users.Where(u => u.ID.Equals(id)).FirstOrDefault();
+                if (currentUser != null)
+                {
+                    currentUser.Name = form["Name"];
+                    currentUser.Surname = form["Surname"];
+                    currentUser.Email = form["Email"];
+                }
+                ctx.SaveChanges();
+            }
+            return RedirectToAction("Index");
+
+        }
+
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            using (Models.MyContext ctx = new Models.MyContext())
+            {
+                var currentUser = ctx.Users.Where(u => u.ID.Equals(id)).FirstOrDefault();
+                if (currentUser != null)
+                    return View();
+            }
+            return View();
+
+        }
+
+       
+        public ActionResult Delete(int id, FormCollection form)
+        {
+            using (Models.MyContext ctx = new Models.MyContext())
+            {
+                var currentUser = ctx.Users.Where(u => u.ID.Equals(id)).FirstOrDefault();
+                if (currentUser != null)
+                {
+                    ctx.Users.Remove(currentUser);
+     
+                }
+                ctx.SaveChanges();
+            }
+            return RedirectToAction("Index");
+
+        }
+
     }
 }
