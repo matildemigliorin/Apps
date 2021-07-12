@@ -75,19 +75,6 @@ namespace Test.Controllers
 
         }
 
-        [HttpGet]
-        public ActionResult Delete(int id)
-        {
-            using (Models.MyContext ctx = new Models.MyContext())
-            {
-                var currentUser = ctx.Users.Where(u => u.ID.Equals(id)).FirstOrDefault();
-                if (currentUser != null)
-                    return View();
-            }
-            return View();
-
-        }
-
        
         public ActionResult Delete(int id, FormCollection form)
         {
