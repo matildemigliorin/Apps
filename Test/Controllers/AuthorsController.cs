@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Test.Controllers
 {
-    public class AuthorController : Controller
+    public class AuthorsController : Controller
     {
         // GET: Author
         public ActionResult Index()
@@ -17,15 +17,17 @@ namespace Test.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            return View();
+
+            return View(); /*richiamo la vista*/
+
         }
 
         [HttpPost]
         public ActionResult Create(FormCollection form)
         {
-            using (Models.MyContext ctx =  new Models.MyContext())
+            using (Models.MyContext ctx = new Models.MyContext())
             {
-                Models.Author author = new Models.Author
+                Models.Author author = new Models.Author()
                 {
                     Name = form["Name"],
                     Surname = form["Surname"]
@@ -34,6 +36,7 @@ namespace Test.Controllers
                 ctx.SaveChanges();
                 return RedirectToAction("Index");
             }
+
         }
     }
 }

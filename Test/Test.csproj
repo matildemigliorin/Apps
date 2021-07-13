@@ -127,7 +127,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AuthorController.cs" />
+    <Compile Include="Controllers\AuthorsController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
@@ -148,6 +148,34 @@
     <Compile Include="Migrations\202107130950372_Fourth.cs" />
     <Compile Include="Migrations\202107130950372_Fourth.designer.cs">
       <DependentUpon>202107130950372_Fourth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107131011271_Fifth.cs" />
+    <Compile Include="Migrations\202107131011271_Fifth.designer.cs">
+      <DependentUpon>202107131011271_Fifth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107131018097_Sixth.cs" />
+    <Compile Include="Migrations\202107131018097_Sixth.designer.cs">
+      <DependentUpon>202107131018097_Sixth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107131419188_Seventh.cs" />
+    <Compile Include="Migrations\202107131419188_Seventh.designer.cs">
+      <DependentUpon>202107131419188_Seventh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107131424035_Eight.cs" />
+    <Compile Include="Migrations\202107131424035_Eight.designer.cs">
+      <DependentUpon>202107131424035_Eight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107131426058_Nine.cs" />
+    <Compile Include="Migrations\202107131426058_Nine.designer.cs">
+      <DependentUpon>202107131426058_Nine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107131429376_Ten.cs" />
+    <Compile Include="Migrations\202107131429376_Ten.designer.cs">
+      <DependentUpon>202107131429376_Ten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107131434374_Eleven.cs" />
+    <Compile Include="Migrations\202107131434374_Eleven.designer.cs">
+      <DependentUpon>202107131434374_Eleven.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
@@ -208,8 +236,8 @@
     <Content Include="Views\Books\Index.cshtml" />
     <Content Include="Views\Books\Delete.cshtml" />
     <Content Include="Views\Books\Edit.cshtml" />
-    <Content Include="Views\Author\Index.cshtml" />
-    <Content Include="Views\Author\Create.cshtml" />
+    <Content Include="Views\Authors\Index.cshtml" />
+    <Content Include="Views\Authors\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -239,6 +267,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107130950372_Fourth.resx">
       <DependentUpon>202107130950372_Fourth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107131011271_Fifth.resx">
+      <DependentUpon>202107131011271_Fifth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107131018097_Sixth.resx">
+      <DependentUpon>202107131018097_Sixth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107131419188_Seventh.resx">
+      <DependentUpon>202107131419188_Seventh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107131424035_Eight.resx">
+      <DependentUpon>202107131424035_Eight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107131426058_Nine.resx">
+      <DependentUpon>202107131426058_Nine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107131429376_Ten.resx">
+      <DependentUpon>202107131429376_Ten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107131434374_Eleven.resx">
+      <DependentUpon>202107131434374_Eleven.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

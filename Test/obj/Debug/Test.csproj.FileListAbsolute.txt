@@ -93,3 +93,10 @@ C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.csproj.GenerateResource.ca
 C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Second.resources
 C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Third.resources
 C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Fourth.resources
+C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Fifth.resources
+C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Sixth.resources
+C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Seventh.resources
+C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Eight.resources
+C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Nine.resources
+C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Ten.resources
+C:\Users\matil\Desktop\ESAME\Test\Test\obj\Debug\Test.Migrations.Eleven.resources

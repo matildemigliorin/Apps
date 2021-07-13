@@ -20,6 +20,7 @@ namespace Test.Models
 
 
         public User CurrentUser { get; set; }
+        public Author CurrentAuthor { get; set; }
     }
     
 }
