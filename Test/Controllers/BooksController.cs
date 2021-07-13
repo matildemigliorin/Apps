@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,14 +11,18 @@ namespace Test.Controllers
         // GET: Books
         public ActionResult Index()
         {
-            return View();
+            using( Models.MyContext ctx = new Models.MyContext())
+            {
+                var items = ctx.Books.OrderBy(b => b.Title).ToList();
+                    return View(items);
+            }
         }
 
         [HttpGet]
         public ActionResult Create()
         {
 
-            return View(); /*richiamo la vista*/
+            return View(); 
 
         }
 

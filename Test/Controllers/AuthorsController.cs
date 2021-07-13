@@ -11,7 +11,11 @@ namespace Test.Controllers
         // GET: Author
         public ActionResult Index()
         {
-            return View();
+            using (Models.MyContext ctx = new Models.MyContext())
+            {
+                var items = ctx.Authors.OrderBy(a => a.Name).ToList();
+                return View(items);
+            }
         }
 
         [HttpGet]
@@ -37,6 +41,21 @@ namespace Test.Controllers
                 return RedirectToAction("Index");
             }
 
+        }
+
+        public ActionResult Delete(int id, FormCollection form)
+        {
+            using(Models.MyContext ctx = new Models.MyContext())
+            {
+                var currentAuthor = ctx.Authors.Where(a => a.Id.Equals(id)).FirstOrDefault();
+                if(currentAuthor != null)
+                {
+                    ctx.Authors.Remove(currentAuthor);
+                }
+                ctx.SaveChanges();
+                    
+             }
+            return RedirectToAction("Index");
         }
     }
 }
