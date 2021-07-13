@@ -127,6 +127,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthorController.cs" />
+    <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -143,7 +145,12 @@
     <Compile Include="Migrations\202107111544221_Third.designer.cs">
       <DependentUpon>202107111544221_Third.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107130950372_Fourth.cs" />
+    <Compile Include="Migrations\202107130950372_Fourth.designer.cs">
+      <DependentUpon>202107130950372_Fourth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Error.cs" />
     <Compile Include="Models\MyContext.cs" />
@@ -197,6 +204,12 @@
     <Content Include="Views\Users\Create.cshtml" />
     <Content Include="Views\Users\Edit.cshtml" />
     <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Books\Create.cshtml" />
+    <Content Include="Views\Books\Index.cshtml" />
+    <Content Include="Views\Books\Delete.cshtml" />
+    <Content Include="Views\Books\Edit.cshtml" />
+    <Content Include="Views\Author\Index.cshtml" />
+    <Content Include="Views\Author\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -223,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107111544221_Third.resx">
       <DependentUpon>202107111544221_Third.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107130950372_Fourth.resx">
+      <DependentUpon>202107130950372_Fourth.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
